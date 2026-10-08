@@ -1,6 +1,6 @@
 <x-layout>
     <x-form title="Register an account" description="Start tracking your ideas now">
-        <form action="/register" method="POST" class="mt-10 space-y-4">
+        <form action="/register" method="POST" class="mt-7 space-y-4">
             @csrf
             <x-form.field label="Name" name="name" type="text" />
             <x-form.field label="Email" name="email" type="email" />

@@ -9,7 +9,6 @@ label {
     border-width: 2px;
     border-color: var(--color-border);
     padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
-    background-color: var(--color-card);
     color: var(--color-foreground);
     outline: 2px solid transparent;
     outline-offset: 2px;
