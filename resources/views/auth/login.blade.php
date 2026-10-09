@@ -4,7 +4,7 @@
             @csrf
             <x-form.field label="Email" name="email" type="email" />
             <x-form.field label="Password" name="password" type="password" />
-            <button type="submit" class="btn mt-2 h-10 w-full">Sign In</button>
+            <button type="submit" data-test="login-button" class="btn mt-2 h-10 w-full">Sign In</button>
         </form>
     </x-form>
 

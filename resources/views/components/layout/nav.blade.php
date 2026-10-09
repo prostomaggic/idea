@@ -10,14 +10,14 @@
                 <form action="/logout" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button class="btn" type="submit">Log out</button>
+                    <button class="btn" type="submit" data-test="logout-nav-button">Log out</button>
                 </form>
             </div>
 
         @else
             <div class="flex gap-x-5 items-center">
-                <a href="/register" class="btn">Register</a>
-                <a href="/login">Sign In</a>
+                <a href="/register" class="btn" data-test="register-nav-button">Register</a>
+                <a href="/login" data-test="login-nav-button">Sign In</a>
             </div>
         @endauth
     </div>
