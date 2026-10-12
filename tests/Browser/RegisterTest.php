@@ -1,4 +1,5 @@
 <?php
+
 it('registers a user', function () {
     visit('/register')
         ->fill('name', 'Alex')
@@ -8,7 +9,7 @@ it('registers a user', function () {
         ->assertPathIs('/');
 
     $this->assertAuthenticated();
-    $this->assertDatabaseHas('users',[
-        'name'=> 'Alex',
+    $this->assertDatabaseHas('users', [
+        'name' => 'Alex',
     ]);
 });
